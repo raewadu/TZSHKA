@@ -14,6 +14,7 @@ const CreateBoard = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		console.log('s');
 
 		if (!title.trim()) return;
 
@@ -32,7 +33,9 @@ const CreateBoard = () => {
 				onChange={(e) => setTitle(e.target.value)}
 				placeholder="Название доски"
 			/>
-			<Button disabled={isPending}>Создать</Button>
+			<Button disabled={isPending} type="submit">
+				Создать
+			</Button>
 		</form>
 	);
 };
