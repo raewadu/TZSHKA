@@ -36,6 +36,9 @@ const Profile = () => {
 			},
 		);
 	};
+	const handleLogout = () => {
+		logout();
+	};
 
 	return (
 		<div className="container">
@@ -69,6 +72,9 @@ const Profile = () => {
 
 					<Button type="submit">Сохранить</Button>
 				</form>
+				<button onClick={handleLogout} className={styles.logout}>
+					Выйти из профиля
+				</button>
 			</div>
 		</div>
 	);

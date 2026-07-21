@@ -79,6 +79,8 @@
 
 	background-color: var(--bg);
 	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
 }
 
 .avatarWrapper {
@@ -111,4 +113,13 @@
 
 	background-color: var(--surface);
 	border-radius: 12px;
+}
+.logout {
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: var(--danger);
+}
+.logout:hover {
+	color: var(--text);
 }
