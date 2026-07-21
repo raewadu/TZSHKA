@@ -1,0 +1,184 @@
+.column {
+	text-align: center;
+	padding: 10px;
+	background-color: var(--surface);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.textCenter {
+	text-align: center;
+}
+
+.task {
+	background-color: var(--bg);
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+
+	transition: opacity 0.2s ease;
+}
+.task button {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: var(--surface);
+	color: var(--text);
+	transition:
+		background-color,
+		color 0.3s ease;
+}
+.task button:hover {
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+.drag {
+	cursor: grab;
+	outline: none;
+	touch-action: none;
+	user-select: none;
+}
+.drag:active {
+	cursor: grabbing;
+}
+.dragging {
+	cursor: grab;
+	opacity: 0.5;
+}
+.over {
+	background-color: var(--primary-hover);
+}
+.trash {
+	margin-top: 40px;
+
+	border: 2px dashed var(--danger);
+
+	border-radius: 12px;
+
+	padding: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+
+	color: var(--danger);
+
+	transition: 0.2s;
+}
+
+.over {
+	background: var(--primary-hover);
+
+	transform: scale(1.02);
+}
+.empty {
+	color: var(--text-secondary);
+	font-style: italic;
+	text-align: center;
+	margin-top: 20px;
+}
+.selectWrapper {
+	position: relative;
+	width: 100%;
+}
+.select {
+	width: 100%;
+
+	padding: 10px 15px;
+
+	border: 2px solid var(--border);
+	border-radius: 50px;
+
+	background: var(--surface);
+	color: var(--text);
+
+	outline: none;
+	appearance: none;
+
+	cursor: pointer;
+}
+.icon {
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	pointer-events: none;
+
+	color: var(--text-secondary);
+}
+.modalForm {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+option {
+	background: var(--bg);
+	color: var(--text);
+}
+.openTask {
+	cursor: pointer;
+}
+.taskModal {
+	margin-top: 10px;
+	padding: 20px;
+	border-radius: 12px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+}
+.taskModal p {
+	padding: 20px;
+	background-color: var(--surface);
+	border-radius: 10px;
+	color: var(--text);
+	word-break: break-word;
+	overflow-wrap: anywhere;
+}
+
+.low {
+	background: #22c55e;
+}
+
+.medium {
+	background: #eab308;
+}
+
+.high {
+	background: #ef4444;
+}
+.filters {
+	width: 100%;
+	max-width: 600px;
+	display: flex;
+	margin: 20px auto;
+	background-color: var(--surface);
+	padding: 20px;
+	border-radius: 10px;
+	gap: 10px;
+}
+.tags {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.tagsWrapper {
+	display: flex;
+	gap: 5px;
+}
+.tag {
+	padding: 5px;
+	background-color: var(--bg);
+	border-radius: 10px;
+}
+.deleteTag {
+	margin-left: 10px;
+	color: var(--danger);
+}

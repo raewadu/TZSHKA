@@ -1,0 +1,114 @@
+.textCenter {
+	text-align: center;
+}
+.board {
+	padding: 20px;
+
+	border: 1px solid var(--border);
+	border-radius: 16px;
+
+	background: var(--card);
+
+	min-height: 120px;
+	transition:
+		transform 0.25s,
+		box-shadow 0.25s,
+		border-color 0.25s;
+}
+.board:hover {
+	transform: translateY(-4px);
+
+	border-color: var(--primary);
+
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 24px;
+
+	margin-top: 32px;
+}
+
+.empty {
+	grid-column: 1 / -1;
+
+	text-align: center;
+
+	color: var(--text-secondary);
+	font-size: 18px;
+}
+.taskContainer {
+	max-width: 1200px;
+	width: 100%;
+	margin: 30px auto;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.taskContainer h1 {
+	background-color: var(--surface);
+	border-radius: 10px;
+	padding: 10px;
+}
+.columnWrapper {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 30px;
+}
+
+.taskForm {
+	background-color: var(--surface);
+	border-radius: 10px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.taskForm Button {
+	width: 300px;
+}
+.profileWrapper {
+	width: 100%;
+	max-width: 700px;
+
+	margin: 20px auto;
+	padding: 24px;
+
+	background-color: var(--bg);
+	border-radius: 12px;
+}
+
+.avatarWrapper {
+	width: 100%;
+	max-width: 220px;
+	aspect-ratio: 1;
+
+	margin: 20px auto;
+}
+
+.avatar {
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid var(--primary);
+}
+
+.profileForm {
+	width: 100%;
+	max-width: 450px;
+
+	margin: 20px auto;
+	padding: 24px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	background-color: var(--surface);
+	border-radius: 12px;
+}

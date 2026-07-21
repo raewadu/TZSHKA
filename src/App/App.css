@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease,
+		border-color 0.3s ease;
+}
+
+:root {
+	--bg: #ffefd5;
+	--surface: #ffffff;
+	--card: #ffffff;
+
+	--text: #bf4f74;
+	--text-secondary: #6b7280;
+
+	--border: #bf4f74;
+
+	--primary: #9e395b;
+	--primary-hover: #edd3a9;
+
+	--danger: #ef4444;
+}
+
+body[data-theme='dark'] {
+	--bg: #0d1117;
+	--surface: #161b22;
+	--card: #21262d;
+
+	--text: #f0f6fc;
+	--text-secondary: #8b949e;
+
+	--border: #30363d;
+
+	--primary: #58a6ff;
+	--primary-hover: #79c0ff;
+
+	--danger: #f85149;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background: var(--bg);
+	color: var(--text);
+}
+a {
+	text-decoration: none;
+	color: var(--text);
+	transition: color 0.2s;
+}
+button {
+	border: none;
+	background: none;
+	font: inherit;
+	color: inherit;
+}
+a:hover,
+button:hover {
+	color: var(--primary);
+	cursor: pointer;
+}
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 30px auto;
+	padding: 10px 20px;
+	background-color: var(--surface);
+	border-radius: 10px;
+}
