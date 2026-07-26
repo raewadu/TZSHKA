@@ -51,6 +51,7 @@ const Profile = () => {
 							'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQok7mz5iErgglCrJinfWc3-NN9ZIa7RojF3kpAORcghkCjmO1O4GQy20U&s=10'
 						}
 						className={styles.avatar}
+						alt="Аватар пользователя"
 					/>
 				</div>
 				<form onSubmit={handleSubmit} className={styles.profileForm}>
