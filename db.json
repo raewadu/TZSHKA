@@ -50,16 +50,37 @@
   "tasks": [
     {
       "title": "zxc",
-      "description": "",
+      "description": "sfsfsf",
       "author": "asd",
       "tags": [
         "zxc",
-        "sad"
+        "sad",
+        "dsfsdf"
       ],
-      "status": "todo",
+      "status": "inProgress",
       "priority": "high",
       "boardId": "GgKs9Gn48l4",
       "id": "IEK5XBiemlI"
+    },
+    {
+      "title": "asd",
+      "description": "",
+      "author": "asd",
+      "tags": [],
+      "status": "todo",
+      "priority": "low",
+      "boardId": "woVeFFOrzsI",
+      "id": "361uuai0Pqo"
+    },
+    {
+      "title": "asdsad",
+      "description": "",
+      "author": "asd",
+      "tags": [],
+      "status": "todo",
+      "priority": "low",
+      "boardId": "GgKs9Gn48l4",
+      "id": "-dzm07zAHlI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
